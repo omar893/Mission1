@@ -12,5 +12,7 @@ const carValue =  (car: CarModel) => {
 type ConvertAlphabet = (letter: String) => number;
 const letterToNumber: ConvertAlphabet = (letter) => {
     letter = letter.toUpperCase();
-    return letter.charCodeAt(0)-64;
+    const letterValue = letter.charCodeAt(0)-64;
+    if(letterValue>0 && letterValue<27) {return letterValue;}
+    return 0;
 }
