@@ -9,8 +9,7 @@ const carValue =  (car: CarModel) => {
 }
 
 //Take a single letter and return its numberical place in alphabet
-type ConvertAlphabet = (letter: String) => number;
-const letterToNumber: ConvertAlphabet = (letter) => {
+const letterToNumber = (letter: String) => {
     letter = letter.toUpperCase();
     const letterValue = letter.charCodeAt(0)-64;
     if(letterValue>0 && letterValue<27) {return letterValue;}
