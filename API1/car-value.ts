@@ -3,7 +3,7 @@ type CarModel = {
     year: number;
 }
 
-const carValue =  (car: CarModel) => {
+const carValue =  (car: CarModel): number => {
      return car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr),0)
         *100 + car.year;
 }
@@ -15,3 +15,5 @@ const letterToNumber = (letter: String) => {
     if(letterValue>0 && letterValue<27) {return letterValue;}
     return 0;
 }
+
+export default carValue;

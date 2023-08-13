@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const carValue = (car) => {
     return car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr), 0)
         * 100 + car.year;
@@ -12,3 +13,4 @@ const letterToNumber = (letter) => {
     }
     return 0;
 };
+exports.default = carValue;
