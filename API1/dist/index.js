@@ -14,8 +14,7 @@ server.get('/', (req, res) => {
     res.send('Express + TypeScript Server');
 });
 server.post('/', (req, res) => {
-    console.log(req.body);
-    res.send((0, car_value_1.default)(req.body).toString());
+    res.send((0, car_value_1.default)(req.body));
 });
 server.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);

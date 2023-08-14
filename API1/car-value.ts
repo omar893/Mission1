@@ -3,9 +3,9 @@ type CarModel = {
     year: number;
 }
 
-const carValue =  (car: CarModel): number => {
-     return car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr),0)
-        *100 + car.year;
+const carValue =  (car: CarModel) => {
+    return { car_value: car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr),0)
+    *100 + car.year};
 }
 
 //Take a single letter and return its numberical place in alphabet

@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const carValue = (car) => {
-    return car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr), 0)
-        * 100 + car.year;
+    return { car_value: car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr), 0)
+            * 100 + car.year };
 };
 //Take a single letter and return its numberical place in alphabet
 const letterToNumber = (letter) => {

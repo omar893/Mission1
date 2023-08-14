@@ -13,8 +13,7 @@ server.get('/', (req: Request, res: Response) => {
 });
 
 server.post('/', (req: Request, res: Response) => {
-    console.log(req.body);
-    res.send(carValue(req.body).toString());
+    res.send(carValue(req.body));
 });
 
 server.listen(port, () => {
