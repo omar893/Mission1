@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692096532669" clover="3.2.0">
-  <project timestamp="1692096532669" name="All files">
-    <metrics statements="78" coveredstatements="72" conditionals="17" coveredconditionals="14" methods="17" coveredmethods="15" elements="112" coveredelements="101" complexity="0" loc="78" ncloc="78" packages="2" files="6" classes="6"/>
+<coverage generated="1692166199333" clover="3.2.0">
+  <project timestamp="1692166199334" name="All files">
+    <metrics statements="79" coveredstatements="75" conditionals="21" coveredconditionals="19" methods="17" coveredmethods="15" elements="117" coveredelements="109" complexity="0" loc="79" ncloc="79" packages="2" files="6" classes="6"/>
     <package name="API1">
-      <metrics statements="36" coveredstatements="33" conditionals="4" coveredconditionals="3" methods="8" coveredmethods="7"/>
+      <metrics statements="36" coveredstatements="34" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="7"/>
       <file name="car-value.ts" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\car-value.ts">
-        <metrics statements="8" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="15" count="5" type="cond" truecount="3" falsecount="0"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
       <file name="claims-to-risk.ts" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\claims-to-risk.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="11" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="4" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\index.ts">
         <metrics statements="18" coveredstatements="16" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="3"/>
@@ -41,9 +41,9 @@
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="24" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
@@ -51,33 +51,34 @@
       </file>
     </package>
     <package name="API1.dist">
-      <metrics statements="42" coveredstatements="39" conditionals="13" coveredconditionals="11" methods="9" coveredmethods="8"/>
+      <metrics statements="43" coveredstatements="41" conditionals="15" coveredconditionals="14" methods="9" coveredmethods="8"/>
       <file name="car-value.js" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\dist\car-value.js">
-        <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="5" type="cond" truecount="3" falsecount="1"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="claims-to-risk.js" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\dist\claims-to-risk.js">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="C:\Users\omar\Projects\missionreadyhq\Mission1\API1\dist\index.js">
         <metrics statements="21" coveredstatements="19" conditionals="9" coveredconditionals="8" methods="5" coveredmethods="4"/>
@@ -95,9 +96,9 @@
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>

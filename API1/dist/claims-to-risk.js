@@ -1,7 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const claimToRisk = (claimHistory) => {
-    //have to add some string incase on of the keywords is at the start or end of the claim
+    if (claimHistory.claim_history === '') {
+        return { error: 'cannot have an empty input' };
+    }
+    //have to add some string in case one of the keywords is at the start or end of the claim
     const formattedClaim = '.' + claimHistory.claim_history + '.';
     const collideCount = formattedClaim.toLowerCase().split('collide').length - 1;
     const crashCount = formattedClaim.toLowerCase().split('crash').length - 1;

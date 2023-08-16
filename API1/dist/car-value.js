@@ -1,16 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const carValue = (car) => {
-    return { car_value: car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr), 0)
-            * 100 + car.year };
-};
-//Take a single letter and return its numberical place in alphabet
-const letterToNumber = (letter) => {
-    letter = letter.toUpperCase();
-    const letterValue = letter.charCodeAt(0) - 64;
-    if (letterValue > 0 && letterValue < 27) {
-        return letterValue;
+    if (car.year < 0) {
+        return { error: 'Year cannot be negative' };
     }
-    return 0;
+    else {
+        const alphaNumValue = [...car.model.toUpperCase()]
+            .filter((alphabets) => alphabets >= "A" && alphabets <= "Z")
+            .reduce((sum, alphabets) => sum + alphabets.charCodeAt(0) - "A".charCodeAt(0) + 1, 0);
+        return { car_value: alphaNumValue * 100 + car.year };
+    }
 };
 exports.default = carValue;

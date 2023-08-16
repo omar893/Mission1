@@ -4,16 +4,16 @@ type CarModel = {
 }
 
 const carValue =  (car: CarModel) => {
-    return { car_value: car.model.split('').reduce((acc, curr) => acc + letterToNumber(curr),0)
-    *100 + car.year};
-}
-
-//Take a single letter and return its numberical place in alphabet
-const letterToNumber = (letter: String) => {
-    letter = letter.toUpperCase();
-    const letterValue = letter.charCodeAt(0)-64;
-    if(letterValue>0 && letterValue<27) {return letterValue;}
-    return 0;
+     if(car.year<0) { return {error: 'Year cannot be negative'}; }
+    else {
+        const alphaNumValue = [...car.model.toUpperCase()]
+        .filter((alphabets) => alphabets >= "A" && alphabets <= "Z")
+        .reduce(
+        (sum, alphabets) => sum + alphabets.charCodeAt(0) - "A".charCodeAt(0) + 1,
+         0
+        );
+        return {car_value: alphaNumValue * 100 + car.year};
+    }
 }
 
 export default carValue;
