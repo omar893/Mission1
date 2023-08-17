@@ -79,4 +79,12 @@ describe('Mission1 API Endpoint Tests', () => {
         // Assert
         expect(JSON.parse(actual.text)).toStrictEqual(expected);
     }));
+    it('should return an ERROR in JSON format on POST /risk when given a number', () => __awaiter(void 0, void 0, void 0, function* () {
+        // Arrange
+        const expected = { error: 'cannot input numbers' };
+        // Act
+        const actual = yield (0, supertest_1.default)(index_1.default).post('/risk').send({ claim_history: 111 });
+        // Assert
+        expect(JSON.parse(actual.text)).toStrictEqual(expected);
+    }));
 });
